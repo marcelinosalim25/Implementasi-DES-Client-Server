@@ -35,7 +35,6 @@ class Server:
         for c in self.threads:
             c.join()
 
-
 class Client(threading.Thread):
     def __init__(self, client, address, input_list):
         threading.Thread.__init__(self)
@@ -67,7 +66,6 @@ class Client(threading.Thread):
 
             print("No client found")
             self.client.close()
-
 
 if __name__ == "__main__":
     try:
