@@ -28,8 +28,6 @@ class Server:
                     c = Client(client_socket, client_address, input_list)
                     c.start()
                     self.threads.append(c)
-                elif r == sys.stdin:
-                    _ = sys.stdin.readline()
         self.server.close()
 
         for c in self.threads:
@@ -38,7 +36,7 @@ class Server:
 class Client(threading.Thread):
     def __init__(self, client, address, input_list):
         threading.Thread.__init__(self)
-        self.sock = socket
+        self.sock = client
         self.SOCKET_LIST = input_list
         self.client = client
         self.address = address
