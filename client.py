@@ -5,7 +5,7 @@ from des import encryption, decryption
 class Client:
     def __init__(self):
         self.host = '127.0.0.1'
-        self.port = 80
+        self.port = 8080
 
     def open_socket(self):
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

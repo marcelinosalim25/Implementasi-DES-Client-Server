@@ -7,7 +7,7 @@ from des import decryption, encryption
 class Server:
     def __init__(self):
         self.host = '127.0.0.1'
-        self.port = 80
+        self.port = 8080
         self.threads = []
 
     def open_socket(self):
