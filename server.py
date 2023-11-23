@@ -62,7 +62,7 @@ class Client(threading.Thread):
             if self.sock in self.SOCKET_LIST:
                 self.SOCKET_LIST.remove(self.sock)
 
-            print("No client found")
+            print("Klien tidak ditemukan")
             self.client.close()
 
 if __name__ == "__main__":
